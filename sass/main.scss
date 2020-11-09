@@ -1,0 +1,25 @@
+// - utils
+@import "./utils/variables";
+@import "./utils/mixins";
+
+// -base-
+@import "./base/base";
+@import "./base/container";
+
+// - components
+@import "./components/hero-btn";
+@import "./components/title";
+@import "./components/subtitle";
+@import "./components/advantages";
+@import "./components/team";
+@import "./components/social-network";
+@import "./components/work";
+@import "./components/client";
+@import "./components/modal";
+@import "./components/btn-modal-form";
+@import "./components/btn-pointer";
+
+// - layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/footer";

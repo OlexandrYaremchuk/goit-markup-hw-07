@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-style: normal;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+/* ----out style form----- */
+input {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border: none;
+}
+input,
+textarea {
+  outline: none;
+}
+input:active,
+textarea:active {
+  outline: none;
+}
+:focus {
+  outline: none;
+}
+:hover,
+:focus {
+  transition: 250ms var(--cubic);
+}
+textarea {
+  resize: none;
+  resize: horizontal;
+  resize: vertical;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}

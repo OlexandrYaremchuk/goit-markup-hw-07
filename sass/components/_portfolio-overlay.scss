@@ -1,0 +1,35 @@
+.overlay-box {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-overlay {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: 250ms var(--cubic);
+  overflow: hidden;
+  opacity: 0;
+  & > p {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.555;
+
+    padding: 63px 24px;
+
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+  }
+}
+.portfolio-card:hover .portfolio-overlay {
+  transform: translate(0);
+  opacity: 1;
+}

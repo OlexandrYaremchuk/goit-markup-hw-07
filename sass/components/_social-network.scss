@@ -1,0 +1,35 @@
+.social-network {
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  &-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    color: #afb1b8;
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: var(--accent-color);
+    }
+  }
+}
+
+.social-item-list {
+  width: 44px;
+  height: 44px;
+  &:not(:last-child):not(:last-child) {
+    margin-right: 10px;
+  }
+}
