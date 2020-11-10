@@ -2,28 +2,30 @@
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
 
   &-list {
     display: flex;
   }
   &-title {
-    font-family: var(--main-font);
+    font-family: $main-font;
     @include title-font(700, 14px, 16px);
     font-style: normal;
 
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--title-theme-color);
+    color: $title-theme-color;
     padding-bottom: 10px;
   }
   &-desc {
-    font-family: var(--main-font);
+    font-family: $main-font;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    color: var(--subtitle-theme-color);
+    color: $subtitle-theme-color;
     margin-right: 30px;
     min-width: 270px;
   }
@@ -38,6 +40,7 @@
   height: 70px;
 
   &-area {
+    width: 270px;
     height: 120px;
     display: flex;
     justify-content: center;

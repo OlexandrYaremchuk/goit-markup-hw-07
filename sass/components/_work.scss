@@ -24,8 +24,8 @@
     align-items: center;
     background-color: rgba(47, 48, 58, 0.8);
     width: 370px;
-    & > p {
-      font-family: var(--main-font);
+    > p {
+      font-family: $main-font;
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
@@ -34,7 +34,7 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
 
-      color: var(--address-dark-theme-color);
+      color: $address-dark-theme-color;
 
       padding: 27px 82px;
     }

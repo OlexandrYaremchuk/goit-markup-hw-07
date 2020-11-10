@@ -14,8 +14,8 @@
     align-items: center;
     width: 170px;
     height: 90px;
-    color: var(--icons-color);
-    border: 1px solid var(--icons-color);
+    color: $icons-color;
+    border: 1px solid $icons-color;
     border-radius: 4px;
   }
   &-item-list:not(:last-child) {
@@ -23,8 +23,8 @@
   }
   &-link:hover,
   &-link:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+    color: $accent-color;
+    border-color: $accent-color;
   }
 }
 

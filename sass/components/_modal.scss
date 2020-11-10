@@ -7,12 +7,12 @@
   background-color: rgba(0, 0, 0, 0.2);
   transform: scale(1);
   overflow-y: auto;
-  transition: 250ms var(--cubic);
+  transition: 250ms $cubic;
 }
 
 .backdrop .is-hiden {
   transform: scale(1.25);
-  transition: 250ms var(--cubic);
+  transition: 250ms $cubic;
 }
 
 /* ---------MODAL-FORM----------- */
@@ -33,7 +33,7 @@
     position: relative;
     width: 528px;
     height: 581px;
-    background: var(--address-dark-theme-color);
+    background: $address-dark-theme-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -66,7 +66,7 @@
 
   &:hover,
   &:focus {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }
 
@@ -75,7 +75,7 @@
   visibility: hidden;
   pointer-events: none;
   transform: opaciyty();
-  transition: 500ms var(--cubic);
+  transition: 500ms $cubic;
 }
 .form-field {
   & > input {
@@ -92,17 +92,17 @@
   }
   & > input:focus-within,
   & > textarea:focus-within {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
   }
   & > label {
-    font-family: var(--main-font);
+    font-family: $main-font;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
     /* identical to box height */
     letter-spacing: 0.01em;
-    color: var(--address-light-theme-color);
+    color: $address-light-theme-color;
     padding-bottom: 4px;
   }
   & textarea {
@@ -110,7 +110,7 @@
     padding-top: 12px;
     resize: none;
     & & ::placeholder {
-      font-family: var(--main-font);
+      font-family: $main-font;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
@@ -127,7 +127,7 @@
   }
 }
 .form-field-icon {
-  & > svg {
+  > svg {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -149,7 +149,7 @@
 }
 
 // & textarea::placeholder {
-//   font-family: var(--main-font);
+//   font-family: $main-font;
 //   font-style: normal;
 //   font-weight: normal;
 //   font-size: 12px;
@@ -161,13 +161,13 @@
 
 .modal {
   &-input:focus-within + svg {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   &-form-field > h2 {
     display: flex;
     justify-content: center;
 
-    font-family: var(--main-font);
+    font-family: $main-font;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -187,8 +187,7 @@
     padding-left: 40px;
   }
 }
-// .form-field-icon {
-// }
+
 .policy {
   display: flex;
 
@@ -203,8 +202,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
-    /* identical to box height, or 171% */
+    line-height: 1.71;
 
     letter-spacing: 0.03em;
 
@@ -229,10 +227,7 @@
 
 .chackbox:checked + .chackbox-polisy > svg {
   border: none;
-  fill: var(--accent-color);
-  // width: 16px;
-  // height: 15px;
-  // margin-right: 7px;
+  fill: $accent-color;
 }
 
 .polisy-link {
@@ -240,7 +235,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   /* identical to box height, or 171% */
 
   letter-spacing: 0.03em;
@@ -262,5 +257,3 @@
 
   color: #757575;
 }
-
-/* ----------------- */

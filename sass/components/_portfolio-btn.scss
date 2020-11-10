@@ -14,8 +14,8 @@
   cursor: pointer;
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
-    color: var(--address-dark-theme-color);
+    background-color: #2196f3;
+    color: $address-dark-theme-color;
     cursor: pointer;
   }
 }

@@ -1,6 +1,6 @@
 .hero-button {
   padding: 10px 32px;
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -8,7 +8,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--address-dark-theme-color);
+  color: $address-dark-theme-color;
   background: #2196f3;
   border-radius: 4px;
   border: 1px solid transparent;
@@ -22,6 +22,6 @@
   &:focus {
     background: #2196f3;
     transform: scale(1.15);
-    transition: 250ms var(--cubic);
+    transition: 250ms $cubic;
   }
 }

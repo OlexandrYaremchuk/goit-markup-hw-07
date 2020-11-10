@@ -1,7 +1,7 @@
 .portfolio-card-container {
   display: flex;
   flex-wrap: wrap;
-  & > li {
+  > li {
     margin-right: 30px;
     margin-bottom: 30px;
     list-style: none;
@@ -39,12 +39,12 @@
 
 .portfolio {
   &-title {
-    font-family: var(--main-font);
+    font-family: $main-font;
     text-decoration: none;
     font-style: normal;
     margin: 0px;
     margin-bottom: 4px;
-    color: var(--logo-two-ligt-theme-color);
+    color: $logo-two-ligt-theme-color;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -52,14 +52,14 @@
   }
   &-text {
     margin: 0px;
-    color: var(--subtitle-theme-color);
+    color: $subtitle-theme-color;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
     & > a {
       margin: 0px;
-      color: var(--subtitle-theme-color);
+      color: $subtitle-theme-color;
       font-weight: 400;
       font-size: 16px;
       line-height: 1.875;

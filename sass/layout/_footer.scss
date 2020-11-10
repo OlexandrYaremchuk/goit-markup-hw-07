@@ -7,7 +7,7 @@
   &-address {
     padding-top: 20px;
     padding-bottom: 60px;
-    & > a {
+    > a {
       padding-top: 60px;
       margin-right: 70px;
     }
@@ -19,22 +19,22 @@
 }
 .footer-logo {
   &-one {
-    font-family: var(--secondary-font);
+    font-family: $secondary-font;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
-    color: var(--logo-one-color);
+    color: $logo-one-color;
   }
   &-two {
-    font-family: var(--secondary-font);
+    font-family: $secondary-font;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
-    color: var(--logo-two-footer-color);
+    color: $logo-two-footer-color;
   }
 }
 .footer-address {
@@ -45,7 +45,7 @@
     padding-bottom: 9px;
     &-address,
     &-link {
-      font-family: var(--main-font);
+      font-family: $main-font;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -54,7 +54,7 @@
       color: rgba(255, 255, 255, 0.6);
     }
     &-address {
-      color: var(--address-dark-theme-color);
+      color: $address-dark-theme-color;
     }
   }
 }
@@ -86,7 +86,7 @@
 
 .footer-social > h3,
 .footer-form > h3 {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -95,7 +95,7 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 
-  color: var(--address-dark-theme-color);
+  color: $address-dark-theme-color;
 }
 
 .social-network-link.footer {
@@ -104,7 +104,7 @@
   &:hover,
   &:focus {
     color: #ffffff;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
 }
 
@@ -124,7 +124,7 @@
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    color: var(--address-dark-theme-color);
+    color: $address-dark-theme-color;
     background-color: transparent;
   }
 }
@@ -145,11 +145,11 @@
   &:active .send-icon,
   &:hover .send-icon,
   &:focus .send-icon {
-    transition: translateY 250ms var(--cubic);
+    transition: translateY 250ms $cubic;
     animation: animateY 3000ms infinite 1000ms;
   }
   & > span {
-    font-family: var(--main-font);
+    font-family: $main-font;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -170,7 +170,7 @@
   height: 24px;
   margin-top: 13px;
   margin-bottom: 13px;
-  fill: var(--logo-two-footer-color);
+  fill: $logo-two-footer-color;
 }
 .footer-form-input {
   padding-left: 16px;

@@ -8,22 +8,22 @@
 }
 .logo {
   &-one {
-    font-family: var(--secondary-font);
+    font-family: $secondary-font;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
-    color: var(--logo-one-color);
+    color: $logo-one-color;
   }
   &-two {
-    font-family: var(--secondary-font);
+    font-family: $secondary-font;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
-    color: var(--logo-two-ligt-theme-color);
+    color: $logo-two-ligt-theme-color;
   }
 }
 
@@ -38,8 +38,7 @@
     margin-left: 93px;
     &-item {
       height: 100%;
-      margin-left: 50px;
-      margin-left: 0px;
+
       position: relative;
       &:not(:last-child) {
         margin-right: 50px;
@@ -48,13 +47,13 @@
     &-link {
       display: block;
       padding: 32px 0px;
-      font-family: var(--main-font);
+      font-family: $main-font;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
       line-height: 1.142;
       letter-spacing: 0.02em;
-      color: var(--title-theme-color);
+      color: $title-theme-color;
       &::after {
         content: "";
         position: absolute;
@@ -66,13 +65,11 @@
         background-color: #2196f3;
         border-radius: 2px;
         opacity: 0;
-        transform: opasity 0;
-        transition: 250ms var(--cubic);
       }
       &:hover,
       &:focus {
-        color: var(--accent-color);
-        fill: var(--accent-color);
+        color: $accent-color;
+        fill: $accent-color;
       }
     }
   }
@@ -81,7 +78,7 @@
 .active::after {
   opacity: 1;
   // transform: opasity 1;
-  // transition: 250ms var(--cubic);
+  // transition: 250ms $cubic;
 }
 .address {
   display: flex;
@@ -97,13 +94,13 @@
     }
     &-link {
       display: flex;
-      font-family: var(--main-font);
+      font-family: $main-font;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
       line-height: 1.142;
       letter-spacing: 0.02em;
-      color: var(--address-light-theme-color);
+      color: $address-light-theme-color;
       padding-left: 10px;
       align-items: center;
     }
@@ -111,12 +108,12 @@
 }
 
 .address-list-link {
-  & > svg {
+  > svg {
     margin-right: 10px;
   }
   &:hover,
   &:focus {
-    fill: var(--accent-color);
-    color: var(--accent-color);
+    fill: $accent-color;
+    color: $accent-color;
   }
 }

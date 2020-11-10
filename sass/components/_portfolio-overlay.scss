@@ -12,11 +12,11 @@
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: 250ms var(--cubic);
+  transition: 250ms $cubic;
   overflow: hidden;
   opacity: 0;
-  & > p {
-    font-family: var(--main-font);
+  > p {
+    font-family: $main-font;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

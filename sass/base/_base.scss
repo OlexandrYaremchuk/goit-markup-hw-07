@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-style: normal;
 }
@@ -50,4 +51,7 @@ textarea {
 button {
   border: none;
   cursor: pointer;
+}
+.last {
+  margin-right: 25px;
 }
